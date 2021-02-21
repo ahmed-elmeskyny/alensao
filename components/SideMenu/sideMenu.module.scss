@@ -1,0 +1,71 @@
+.menuContainer {
+  padding: 0px 10px;
+  padding-top: 30px;
+  background: rgba($color: #fcfbfd, $alpha: 1);
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 14px;
+
+  .menu {
+    .logo {
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      margin-left: 28px;
+      // margin-bottom: 20px;
+      h3 {
+        padding-left: 10px;
+      }
+    }
+    ul {
+      list-style: none;
+      margin-top: 20px;
+      li {
+        .activeLink {
+          background-color: #5f3dc5;
+          color: white;
+          border-radius: 15px;
+          cursor: pointer;
+        }
+        a {
+          color: #abb0b9;
+          display: flex;
+          justify-self: center;
+          align-items: center;
+          padding: 15px 25px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    .social {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #abb0b9;
+      .icon {
+        transition: all 0.3s ease-in;
+        &:hover {
+          color: #5f3dc5;
+        }
+      }
+    }
+    .copyRight {
+      font-size: 14px;
+      text-align: center;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

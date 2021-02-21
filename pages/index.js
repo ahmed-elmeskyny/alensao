@@ -1,10 +1,16 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import Head from 'next/head';
+
+//components
+import Layout from "../components/Layout/layout";
+
+//style 
+import styles from "../styles/Home.module.scss";
+
+//comonents
+import {FaPhoneAlt} from "react-icons/fa";
+import {FiMail} from "react-icons/fi";
 
 
-import Menu from "../components/Menu/menu";
-
-import Header from "../components/Header/header";
 export default function Home() {
   return (
     <div >
@@ -13,9 +19,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.container} >
-        <Header></Header>
-      </div>
+      <Layout>
+        <div className={styles.infoContainer}>
+          <div className={styles.info}>
+            <FiMail className={styles.icon}></FiMail>
+            <p>Alensao@gmail.com</p>
+          </div>
+          <div className={styles.info}>
+            <FaPhoneAlt className={styles.icon}></FaPhoneAlt>
+            <p>(+212) 679142796 </p>
+          </div>
+        </div>
+      </Layout>
+
     </div>
   )
 }
