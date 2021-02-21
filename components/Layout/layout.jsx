@@ -13,7 +13,7 @@ const Layout = ({children}) => {
             <SideMenu></SideMenu>
             </div>
             <div className={styles.mainContainer}>
-                {children}
+               {children}
             </div>
         </div>
     )
